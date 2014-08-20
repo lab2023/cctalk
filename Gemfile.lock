@@ -8,6 +8,7 @@ GEM
   specs:
     diff-lcs (1.2.5)
     rake (10.3.2)
+    require_all (1.3.2)
     rspec (3.0.0)
       rspec-core (~> 3.0.0)
       rspec-expectations (~> 3.0.0)
@@ -28,4 +29,5 @@ DEPENDENCIES
   bundler (~> 1.6)
   cctalk!
   rake (~> 10.0)
+  require_all (~> 1.3.2)
   rspec (~> 3.0.0)
