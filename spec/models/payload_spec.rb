@@ -3,8 +3,8 @@ require 'spec_helper'
 describe Payload do
 	before { @payload = Payload.new }
 
-	describe 'attributes' do
-    attributes = [:header, :data, :header_type]
+	describe 'attributes and methods' do
+    attributes = [:header, :data, :header_type, :parse_payload]
 
     attributes.each do |attr|
       it { is_expected.to respond_to attr }
@@ -26,6 +26,12 @@ describe Payload do
     it 'should not be negative' do
       @payload = Payload.new -125, 'data'
       expect(@payload.header).to equal 0
+    end
+  end
+
+  describe 'methods' do
+    pending 'should wait' do
+
     end
   end
 
