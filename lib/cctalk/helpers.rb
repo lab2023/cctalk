@@ -1,7 +1,7 @@
 module Cctalk
   def parse_messages(data)
     messages = []
-    while data.length > 0:
+    while data.length > 0
       length = data[1].ord
       break if data.length < length + 5
       message = data[0...length + 5]

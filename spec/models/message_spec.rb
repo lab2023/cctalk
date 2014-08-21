@@ -4,11 +4,13 @@ describe Message do
   before { @message = Message.new }
 
   describe 'attributes' do
-    it { expect(@message).to respond_to :destination }
-    it { expect(@message).to respond_to :length }
-    it { expect(@message).to respond_to :source }
-    it { expect(@message).to respond_to :payload }
-    it { expect(@message).to respond_to :sigmode }
+    subject { @message }
+
+    attributes = [:destination, :length, :source, :payload, :sigmode]
+
+    attributes.each do |attr|
+      it { is_expected.to respond_to attr }
+    end
   end
 
   describe 'attribute types' do

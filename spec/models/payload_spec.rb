@@ -4,9 +4,11 @@ describe Payload do
 	before { @payload = Payload.new }
 
 	describe 'attributes' do
-    it { expect(@payload).to respond_to :header }
-    it { expect(@payload).to respond_to :data }
-    it { expect(@payload).to respond_to :header_type }
+    attributes = [:header, :data, :header_type]
+
+    attributes.each do |attr|
+      it { is_expected.to respond_to attr }
+    end
   end
 
   describe 'attribute types' do
