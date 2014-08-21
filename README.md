@@ -1,5 +1,7 @@
 # ccTalk
 
+[![Build Status](https://travis-ci.org/marjinal1st/cctalk.svg?branch=develop)](https://travis-ci.org/marjinal1st/cctalk)
+
 Ruby ccTalk wrapper
 
 ## Installation
